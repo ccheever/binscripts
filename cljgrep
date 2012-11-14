@@ -1,0 +1,2 @@
+#!/bin/sh
+find ./ \( -name '*.clj' -or -name '*.java' \) -and -not -name '.#*' -print0 | xargs -0 grep -n --color=auto "$@"
